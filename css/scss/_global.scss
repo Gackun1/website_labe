@@ -1,8 +1,38 @@
+$color-brown: #c7ac81;
+$color-white: #ffffff;
+
+$h-padding: 30px;
+$h-width: 200px;
+$h-height: 100vh;
+
+$sec-padding-x: 5%;
+
+@font-face {
+  font-family: "ACME";
+  src: url(../font/ACME_Explosive_Bold.ttf);
+}
+
+@font-face {
+  font-family: "Adria";
+  src: url(../font/AdriaDB.ttf);
+}
+
+@font-face {
+  font-family: "charter";
+  src: url(../font/charter_roman.ttf);
+}
+
+@font-face {
+  font-family: "courier";
+  src: url(../font/courier.ttf);
+}
+
 * {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 p,
@@ -14,13 +44,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: courier-std, monospace;
+  font-family: charter;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h2 {
+  font-family: Adria;
 }
 
 p,
 a,
 span {
   font-size: 1.6rem;
+  line-height: 200%;
+}
+
+p + p {
+  margin-top: 1rem;
 }

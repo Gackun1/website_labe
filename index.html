@@ -4,26 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/ygs4lya.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
-          <ul class="header-nav">
-            <li><a href="">content</a></li>
-            <li><a href="">content</a></li>
-            <li><a href="">content</a></li>
-            <li><a href="">content</a></li>
-            <li><a href="">content</a></li>
-            <li><a href="">content</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header">
+      <a href="" class="header__logo">
+        <img src="img/logo2.png" alt="" class="header__logo-img" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+          <li class="header__list-item"><a href="" class="header__list-item-txt">Contents</a></li>
+        </ul>
+      </nav>
+      <ul class="header__sns">
+        <li class="header__sns-item">
+          <a href="" class="header__sns-item-img"><img src="img/icon_ins.svg" alt="" /></a>
+        </li>
+        <li class="header__sns-item">
+          <a href="" class="header__sns-item-img"><img src="img/icon_twi.svg" alt="" /></a>
+        </li>
+        <li class="header__sns-item">
+          <a href="" class="header__sns-item-img"><img src="img/icon_you.svg" alt="" /></a>
+        </li>
+      </ul>
     </header>
 
+    <main class="main">
+      <!-- main visual -->
+      <div class="main-mv">
+        <img src="img/logo1.png" alt="" class="main-mv__img" />
+      </div>
+      <!-- end of main visual -->
+
+      <!-- about -->
+      <section class="about">
+        <div class="about-gallery">
+          <div class="about-gallery__item about-gallery__item1"><img src="img/about1.jpg" alt="" /></div>
+          <div class="about-gallery__item about-gallery__item2"><img src="img/about2.jpg" alt="" /></div>
+          <div class="about-gallery__item about-gallery__item3"><img src="img/about3.jpg" alt="" /></div>
+          <div class="about-gallery__item about-gallery__item4"><img src="img/about4.jpg" alt="" /></div>
+          <div class="about-gallery__item about-gallery__item5"><img src="img/about5.jpg" alt="" /></div>
+        </div>
+        <div class="about-txt">
+          <h2 class="about-txt__ttl">About</h2>
+          <p class="about-txt__p">
+            大航海時代以降、世界中に進出して行ったヨーロッパ人にとって、アジアの日差しは非常に強く感じられるものでした。そんな異国で心地よく過ごすために考え出された建築様式がコロニアルスタイル。真っ白な建物にベランダを廻らし、風通しが良くなるよ
+            うに工夫された住居は、アジアとヨーロッパ人のスタイルが融合した ものといえるでしょう。
+          </p>
+          <p class="about-txt__p">
+            都会に現れる、白い壁に大きなテラスをもった建物、そして屋根には日本瓦…明治41(1908)年に建てられた歴史ある建物です。その中で繰り広げられるフランス料理は、この建物の佇まいと同じく、フランス料理に和のテイストが融合されたもの。
+          </p>
+        </div>
+      </section>
+      <!-- end of about -->
+
+      <!-- parallax box -->
+      <div class="parallax-box">
+        <img src="img/bg1_lg.png" alt="" class="parallax-box__img rellax" data-rellax-percentage="1" />
+      </div>
+      <!-- end of parallax box -->
+
+      <!-- case -->
+      <section class="case">
+        <div class="case-txt">
+          <h2 class="case-txt__ttl">Case</h2>
+          <p class="case-txt__p">
+            フランス、スイスと数々の3つ星レストランで修業を重ねたシェフが繰り広げる料理のコンセプトは、食材の融合。すなわち美味しい食材に国境をつくらないこと。日本とフランスの料理を融合させた独自のコロニアルスタイルです。
+          </p>
+          <p class="case-txt__p">フランスの食材もふんだんに使えば、フレンチではタブーとされる醤油がゼリーになって登場する…100年の時を経て、さらなるフランスと日本の融合をその目で確かめて下さい。</p>
+        </div>
+        <ul class="case-list">
+          <li class="case-list__item">
+            <div class="case-list__box">
+              <img src="img/case1.jpg" alt="" class="case-list__img" />
+              <h3 class="case-list__ttl">Case1</h3>
+            </div>
+            <a href="" class="case-list__btn">more</a>
+          </li>
+          <li class="case-list__item">
+            <div class="case-list__box">
+              <img src="img/case2.jpg" alt="" class="case-list__img" />
+              <h3 class="case-list__ttl">Case2</h3>
+            </div>
+            <a href="" class="case-list__btn">more</a>
+          </li>
+          <li class="case-list__item">
+            <div class="case-list__box">
+              <img src="img/case3.jpg" alt="" class="case-list__img" />
+              <h3 class="case-list__ttl">Case3</h3>
+            </div>
+            <a href="" class="case-list__btn">more</a>
+          </li>
+        </ul>
+      </section>
+      <!-- end of case -->
+    </main>
     <footer></footer>
+    <script src="js/rellax.min.js"></script>
+    <script>
+      // 要素の位置情報を取得
+      var rellax = new Rellax(".rellax");
+    </script>
   </body>
 </html>
