@@ -37,6 +37,11 @@ $w-sp: 480px;
   text-decoration: none;
   list-style: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background: #0a1415;
@@ -104,4 +109,16 @@ p + p {
   background: #c7ac81;
   margin: 2rem auto 0 auto;
   color: #fff;
+}
+
+.to-top {
+  position: fixed;
+  z-index: 100;
+  right: 4rem;
+  bottom: 3rem;
+  cursor: pointer;
+  transition: 1s ease;
+  &:hover {
+    transform: rotateY(360deg) translateY(-10%);
+  }
 }

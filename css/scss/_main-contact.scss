@@ -11,6 +11,16 @@
     transition: 0.5s ease;
     width: 48%;
     height: 35rem;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 10rem;
+      height: 10rem;
+      background: #000;
+    }
   }
   &__txtbox {
     width: 48%;
