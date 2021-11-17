@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - #{$sec-padding-x} * 2);
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 15rem $sec-padding-x;
+  background: #0a1415;
+  &__map {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    transition: 0.5s ease;
+    width: 48%;
+    height: 35rem;
+  }
+  &__txtbox {
+    width: 48%;
+  }
+  &__ttl {
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 9rem 25rem;
+    grid-template-rows: 8rem 5rem 5rem 5rem;
+    width: fit-content;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  &__data,
+  &__data-ttl {
+    color: #fff;
+    font-size: 1.6rem;
+    border-bottom: double 1px $color-brown;
+    display: flex;
+    align-items: center;
+  }
+  &__data:nth-of-type(4),
+  &__data-ttl:nth-of-type(4) {
+    border: none;
+  }
+}

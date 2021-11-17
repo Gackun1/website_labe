@@ -7,10 +7,8 @@ $h-height: 100vh;
 
 $sec-padding-x: 5%;
 
-@font-face {
-  font-family: "ACME";
-  src: url(../font/ACME_Explosive_Bold.ttf);
-}
+$w-tablet: 960px;
+$w-sp: 480px;
 
 @font-face {
   font-family: "Adria";
@@ -27,12 +25,21 @@ $sec-padding-x: 5%;
   src: url(../font/courier.ttf);
 }
 
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../font/PlayfairDisplay-Medium.ttf);
+}
+
 * {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
+body {
+  position: relative;
+  background: #0a1415;
 }
 
 p,
@@ -43,11 +50,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: charter;
+h6,
+dt,
+dd,
+small {
+  font-family: PlayfairDisplay, YuMincho, Yu Mincho, serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
 }
 
 h1,
@@ -63,5 +73,35 @@ span {
 }
 
 p + p {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.ttl-1 {
+  text-align: center;
+  color: $color-brown;
+  font-size: 5rem;
+  position: relative;
+  padding: 0 0 3rem 0;
+  margin: 0 0 4rem 0;
+  &:after {
+    content: "";
+    width: 22rem;
+    height: 2rem;
+    background: url(../img/title_deco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.btn-1 {
+  display: flex;
+  width: fit-content;
+  padding: 0.5rem 5rem;
+  background: #c7ac81;
+  margin: 2rem auto 0 auto;
+  color: #fff;
 }

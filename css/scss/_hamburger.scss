@@ -1,0 +1,56 @@
+$hamburger_color: #fff;
+
+#hamburger_button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 1;
+  .hamburger_line {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: $hamburger_color;
+    transition: 1s;
+    border-radius: 4px;
+  }
+  #line1 {
+    top: 0;
+  }
+  #line2 {
+    top: 20px;
+    background-color: $hamburger_color;
+  }
+  #line3 {
+    bottom: 0px;
+  }
+  .line1_active {
+    background: $hamburger_color;
+    transform: translateY(20px) rotate(-225deg);
+    top: 0;
+  }
+  .line2_active {
+    background: $hamburger_color;
+    height: 0;
+    opacity: 0;
+  }
+  .line3_active {
+    background: $hamburger_color;
+    transform: translateY(-20px) rotate(225deg);
+    bottom: 0;
+  }
+}
+.hamburger_nav_active {
+  transform: translateX(-100%);
+}
+@media screen and (max-width: $w-tablet) {
+  #hamburger_button {
+    display: block;
+  }
+}

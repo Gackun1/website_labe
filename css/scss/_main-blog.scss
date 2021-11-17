@@ -1,0 +1,97 @@
+.blog {
+  width: calc(100% - #{$sec-padding-x} * 2);
+  background: #0a1415;
+  padding: 15rem $sec-padding-x;
+  border-bottom: solid 1px $color-brown;
+  border-top: solid 1px $color-brown;
+  margin: 12rem 0 0 0;
+}
+
+.blog-txt {
+  color: $color-white;
+  margin: 0 0 5rem 0;
+  &__ttl {
+    text-align: center;
+    color: $color-brown;
+    font-size: 5rem;
+    position: relative;
+    padding: 0 0 3rem 0;
+    margin: 0 0 4rem 0;
+    &:after {
+      content: "";
+      width: 22rem;
+      height: 2rem;
+      background: url(../img/title_deco.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__p {
+    text-align: center;
+  }
+}
+
+.blog-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  a:hover {
+    .blog-list__img {
+      transform: scale(1.03);
+    }
+    .blog-list__btn {
+      &:before {
+        width: 8rem;
+      }
+    }
+  }
+  &__item {
+    margin: 0 2rem;
+    width: 30rem;
+  }
+  &__box {
+    padding: 1rem;
+    border: solid 1px $color-brown;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  &__ttl {
+    color: $color-white;
+    font-size: 1.6rem;
+    margin: 0 0 1rem 0;
+  }
+  &__date {
+    color: #fff;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0 0 0;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: right;
+    color: $color-brown;
+    position: relative;
+    &:before {
+      content: "";
+      width: 4.5rem;
+      height: 1px;
+      background: $color-brown;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transition: 0.5s ease;
+    }
+  }
+}

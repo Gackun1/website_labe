@@ -1,6 +1,8 @@
 .main {
   width: calc(100% - #{$h-width});
   margin: 0 0 0 $h-width;
+  overflow-x: hidden;
+  background: #0a1415;
 }
 
 .main-mv {
@@ -8,6 +10,7 @@
   height: 100vh;
   background: url(../img/main1.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   &__img {
     position: absolute;

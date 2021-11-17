@@ -1,0 +1,15 @@
+.footer {
+  width: calc(100% - #{$h-width});
+  margin: 0 0 0 $h-width;
+  padding: 15rem 0 0 0;
+  overflow-x: hidden;
+  background: #0a1415;
+  border-top: solid 1px $color-brown;
+  &__copy {
+    color: #fff;
+    font-size: 1.4rem;
+    display: block;
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+}
