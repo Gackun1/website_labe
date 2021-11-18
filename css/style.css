@@ -158,6 +158,23 @@ p + p {
   color: #c7ac81;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  position: relative;
+}
+
+.header__list-item-txt:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #c7ac81;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header__list-item-txt:hover:after {
+  width: 100%;
 }
 
 .header__sns {
@@ -658,7 +675,7 @@ p + p {
 
 .menu__p {
   color: #fff;
-  max-width: 90rem;
+  max-width: 91rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 5%;
