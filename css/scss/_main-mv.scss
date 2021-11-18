@@ -1,6 +1,5 @@
 .main {
-  width: calc(100% - #{$h-width});
-  margin: 0 0 0 $h-width;
+  width: 100%;
   overflow-x: hidden;
   background: #0a1415;
 }

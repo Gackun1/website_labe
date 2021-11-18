@@ -1,38 +1,50 @@
-$hamburger_color: #fff;
+$hamburger_color: $color-brown;
 
 #hamburger_button {
-  display: none;
+  // display: none;
   position: fixed;
   top: 20px;
   right: 30px;
-  width: 50px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-  transition: 1s;
   z-index: 1;
+  border-radius: 0;
+  border: solid 1px $color-brown;
+  transition: 1s;
   .hamburger_line {
     display: block;
     position: absolute;
-    left: 0;
-    width: 50px;
-    height: 3px;
+    left: 50%;
+    width: 150%;
+    height: 1px;
     background-color: $hamburger_color;
     transition: 1s;
-    border-radius: 4px;
+    transform: translateX(-50%);
   }
   #line1 {
-    top: 0;
+    top: 20%;
   }
   #line2 {
     top: 20px;
     background-color: $hamburger_color;
+    height: 0;
+    background: transparent;
+    &:after {
+      content: "menu";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: $hamburger_color;
+    }
   }
   #line3 {
-    bottom: 0px;
+    bottom: 20%;
   }
   .line1_active {
     background: $hamburger_color;
-    transform: translateY(20px) rotate(-225deg);
+    transform: translate(-50%, 13px) rotate(-45deg);
     top: 0;
   }
   .line2_active {
@@ -42,13 +54,18 @@ $hamburger_color: #fff;
   }
   .line3_active {
     background: $hamburger_color;
-    transform: translateY(-20px) rotate(225deg);
+    transform: translate(-50%, -13px) rotate(45deg);
     bottom: 0;
   }
 }
 .hamburger_nav_active {
   transform: translateX(-100%);
 }
+
+#hamburger_button.hamburger_button--open {
+  border-radius: 25px;
+}
+
 @media screen and (max-width: $w-tablet) {
   #hamburger_button {
     display: block;

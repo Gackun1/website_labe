@@ -12,16 +12,14 @@
 }
 
 @media screen and (max-width: $w-tablet) {
+  .content-wrapper {
+    width: 100%;
+    margin: 0;
+  }
   .header {
     transform: translate(-100%, 0);
   }
-  .main {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
   .footer {
-    width: 100%;
-    margin: 0 0 0 0;
     padding: 10rem 0 0 0;
   }
 

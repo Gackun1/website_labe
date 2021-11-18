@@ -1,0 +1,43 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  background: #000;
+  display: block;
+  transition: 1s ease;
+  &--loaded {
+    transition: 1s ease;
+    transition-delay: 1.25s;
+    opacity: 0;
+    visibility: hidden;
+    .loading__svg {
+      transition: 1s ease;
+      transition-delay: 0.8s;
+      top: 75px;
+      left: 100px;
+      height: 49px;
+      path {
+        transition: 1s;
+        stroke: none;
+        fill-opacity: 1;
+      }
+    }
+  }
+  &__svg {
+    width: auto;
+    height: 10rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    path {
+      stroke: $color-brown;
+      stroke-width: 1;
+      stroke-miterlimit: 10;
+      fill-opacity: 0;
+    }
+  }
+}

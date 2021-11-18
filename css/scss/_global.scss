@@ -16,18 +16,8 @@ $w-sp: 480px;
 }
 
 @font-face {
-  font-family: "charter";
-  src: url(../font/charter_roman.ttf);
-}
-
-@font-face {
-  font-family: "courier";
-  src: url(../font/courier.ttf);
-}
-
-@font-face {
   font-family: "PlayfairDisplay";
-  src: url(../font/PlayfairDisplay-Medium.ttf);
+  src: url(../font/AbrilFatface.ttf);
 }
 
 * {
@@ -59,7 +49,8 @@ h6,
 dt,
 dd,
 small {
-  font-family: PlayfairDisplay, YuMincho, Yu Mincho, serif;
+  // font-family: PlayfairDisplay, YuMincho, Yu Mincho, serif;
+  font-family: YuMincho, Yu Mincho, serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.15rem;
@@ -79,6 +70,16 @@ span {
 
 p + p {
   margin-top: 2rem;
+}
+
+.content-wrapper {
+  width: calc(100% - 200px);
+  margin: 0 0 0 200px;
+  transition: 0.5s ease;
+  &--full {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .ttl-1 {
